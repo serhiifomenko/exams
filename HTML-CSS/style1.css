@@ -29,10 +29,17 @@ nav{
     align-items: center;
 
 }
-ul{
+header nav ul{
     display: flex;
     gap: 50px;
     padding: 50px;
+}
+header nav a {
+    color: inherit;
+    text-decoration: none;
+}
+header nav a:hover {
+    text-decoration: none;
 }
 .logo{
     display: inline-flex;
@@ -245,6 +252,13 @@ h1{
     justify-content: space-between;
     align-items: center;
 }
+.section__second-header a{
+    color: inherit;
+    text-decoration: none;
+}
+.section__second-header a:hover{
+    text-decoration: none;
+}
 .browse{
     color: #2B2C34;
 
@@ -375,6 +389,13 @@ main{
     align-items: center;
     justify-content: center;
     align-content: center;
+}
+.article__header a{
+    color: inherit;
+    text-decoration: none;
+}
+.article__header a:hover{
+    text-decoration: none;
 }
 .article-image img{
     width: 260px;
@@ -516,7 +537,7 @@ main{
 
     background: white;
     border-radius: 50%;
-    padding: 25px 25px 0px 25px;
+    padding: 25px 25px 0 25px;
 
 
 }
@@ -538,4 +559,68 @@ h3{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.main-container {
+    width: 100%;
+    background: #e4e5e9;
+    margin: 0;
+    padding: 0 94px;
+}
+
+.footer {
+    width: 100%;
+    min-height: 435px;
+
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    gap: 95px;
+    align-items: start;
+
+    padding: 70px 0;
+    margin: 0;
+}
+
+.footer-column ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column li {
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.footer-column a {
+    color: #2b2c34;
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+
+    margin-top: 20px;
+}
+
+.footer-column h5 {
+    margin: 0 0 20px;
+    color: #2b2c34;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.social__icons img{
+    width: 30px;
+    height: 30px;
+
+    background:lightgray 50% / contain no-repeat;
+}
+.social__icons{
+    display: flex;
+    gap: 30px;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 10px;
 }
